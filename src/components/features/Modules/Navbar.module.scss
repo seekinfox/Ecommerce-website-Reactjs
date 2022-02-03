@@ -1,0 +1,117 @@
+@use "../../../stylesheets/shared/variables" as v;
+@use "../../../stylesheets/shared/mixins" as m;
+
+
+@mixin link {
+   font-weight: 7 00;
+   color: v.$Black-main-text;
+   font-weight: 700;
+   text-decoration: none;
+}
+.navbarSection {
+   border: 1px solid blue;
+   padding: 1rem 2rem;
+   background-color: v.$White;
+   @include m.desktop {
+      @include m.flex-row;
+      align-items: center;
+      justify-content: space-between;  
+   }
+   .logo {
+      @include m.flex-row;
+      @include m.flex-center;
+      padding-right: 25%;
+      @include m.desktop {
+         padding: 0;
+      }
+      img {
+         width: 3rem;
+         height: 3rem;
+      }
+      span {
+         font-weight: 700;
+         text-transform: uppercase;
+         margin: 0 .3rem;
+      }
+      .menuIcon {
+         font-size: 1.7rem;
+         margin-right: auto;
+         border: 1px solid red;
+         
+      }
+
+   }
+
+}
+
+.nav {
+   border: 1px solid red;
+   @include m.flex-row;
+   @include m.flex-center;
+   height: 3rem;
+   .link {
+      border: 1px solid yellow;
+      height: 100%;
+      margin: 0 3rem;
+      @include link;
+   }
+   .cart {
+      @include m.flex-row;
+      @include m.flex-center;
+      height: 100%;
+      width: 4rem;
+      border-left: 2px solid v.$Light-gray;
+      margin: 0 2rem;
+      
+      .icon {
+         font-size: 1.6rem;
+      }
+   }
+
+}
+
+.mobileNavContainer {
+   position: absolute;
+   top: 0;
+   left: 0;
+   height: 100%;
+   width: 100%;
+   background-color: v.$Black-Opacity;
+   @include m.flex-row;
+   justify-content: flex-start;
+
+   .Mnav {
+      box-shadow: 10px 0px 10px v.$Black-Opacity;
+      height: 100%;  
+      width: 70%;
+      background-color: v.$White;
+      @include m.flex-column;
+      padding: 5rem 2rem;
+      transition: .3s ease;
+      
+      .Mlink {
+         width: 100%;
+         @include link;
+      }
+      .Mcart {
+         @include m.flex-row;
+         padding: 1rem 0;
+         border-top: 1px solid v.$Light-gray;
+         .icon {
+            font-size: 1.3rem;
+         }
+      }
+
+   }
+   .open {
+      animation: slide .2s linear forwards;
+   }
+}
+@keyframes slide {
+   from {
+      transform: translateX(-100%);
+   }
+   to {
+      transform: translateX(0);
+   }
+}

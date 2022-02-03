@@ -1,0 +1,8 @@
+@use "shared/variables" as v;
+@use "shared/nomalize";
+@use "shared/mixins" as m;
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+html, body {
+   font-family: v.$font;
+}
