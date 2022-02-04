@@ -1,0 +1,117 @@
+@use "../../../stylesheets/shared/variables" as v;
+@use "../../../stylesheets/shared/mixins" as m;
+
+.tfc__container {
+   margin: 1rem 0;
+   position: relative;
+   .tfc__content {
+      text-align: left;
+      padding: 2rem 1rem;
+      width: 100;
+      color: v.$White;
+      > h1 {
+         font-size: 2rem;
+         text-transform: uppercase;
+      }
+      > p {
+         width: 80%;
+         line-height: 1.4;
+         font-weight: bold;
+         &:nth-of-type(1){
+            font-size: 1.5rem;
+         }
+      }
+      
+   }
+   .tfc__image {
+      width: 100%;
+      height: 20rem;
+      @include m.flex-column;
+      box-shadow: -15px 10px 5px v.$Black-Opacity ;
+      > img {
+         height: 100%;
+         width: 100%;
+      }
+   }
+
+}
+.tfc__buttons {
+   @include m.flex-row;
+   justify-content: space-between;
+   font-size: .9rem;
+   margin-top: 2rem;
+   @include m.desktop {
+      width: 50%;
+      justify-content: space-between;
+    }
+}
+button {
+   border: none;
+   text-transform: uppercase !important;
+   padding:.8rem 2rem;
+   font-weight: bold;
+   color: v.$White;
+   &:hover {
+      filter: brightness(90%);
+   }
+}
+
+
+
+@include m.desktop {
+   .tfc__container {
+      padding: 0 5rem;
+      position: relative;
+
+      .tfc__content {
+         text-align: left;
+         position: relative;
+         padding: 5rem 5% 5rem 2rem;
+         width: 65%;
+         > h1 {
+            font-size: 3rem;
+         }
+         > p {
+            &:nth-of-type(1){
+               font-size: 1.5rem;
+            }
+         }
+         > * {
+            position: relative;
+            z-index: 1;
+         }
+      }
+      .tfc__image {
+         width: 50%;
+         height: 30rem;
+         position: absolute;
+         top: 20%;
+         right: 5%;
+         z-index: 0;
+         > img {
+            width: 100%;
+         }
+      }
+   
+   }  
+}
+
+.tfc__Home_content {
+   background-color: v.$light-orange;
+   button {
+      background-color: v.$Light-red;
+   }
+}
+
+.tfc__Women_content {
+   background-color: v.$Womens-light-pink;
+   button {
+      background-color: v.$Dark-pink;
+   }
+}
+.tfc__Men_content {
+   background-color: v.$Mens-light-sky-blue;
+  button {
+     background-color: v.$Dark-blue;
+  }
+}
