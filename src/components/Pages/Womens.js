@@ -1,7 +1,10 @@
 import React from 'react';
+import TopFeatureCard from '../features/TopFeatureCard';
 
 export default function Womens() {
-  return <div>
-     womens
-  </div>;
+  return (
+    <>
+      <TopFeatureCard page="womens" />
+    </>
+  );
 }
