@@ -1,0 +1,85 @@
+@use "../../../stylesheets/shared/variables" as v;
+@use "../../../stylesheets/shared/mixins" as m;
+
+
+.so__container {
+   height: 40rem;
+   max-height: 100%;
+   overflow: hidden;
+   margin-bottom: 3rem;
+}
+
+.so__window {
+   overflow: hidden;
+   display: grid;
+   grid-template-columns: repeat(4, 100vw);
+   white-space: unset;
+   height: 100%;
+
+}
+.so__card {
+   position: relative;
+   height: 100%;
+   transition: 2s ease;
+   transform: translateX(0vw);
+   > img {
+      width: 100%;
+      opacity: .8;
+      @include m.desktop {
+      width: 100%;
+      height: 100%;
+      transform: translateY(-10rem);
+     }
+   }
+
+   .so__info {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top:0;
+      right: 0;
+      @include m.flex_column;
+      justify-content: center;
+      align-items: flex-end;
+      line-height: 2;
+     @include m.desktop {
+      padding-right: 10rem;
+      line-height: 5;
+     }
+
+     > div {
+      @include m.flex_column;
+      padding:2rem 3rem; 
+      background-color: rgba(0,0,0,.2);
+      transform: translateY(-10rem);
+      > span {
+         color: v.$White;
+         text-transform: capitalize;
+         font-weight: bold;
+         font-size: 1rem;
+         @include m.desktop {
+            font-size: 1.5rem;
+         }
+      }
+      > button {
+         color: v.$White;
+         font-size: .8rem;
+         @include m.desktop {
+            font-size: 1rem;
+         }
+      }
+      .sw {
+         background-color: v.$Brown;
+      }
+      .su {background-color: v.$Dark-blue;
+
+      }
+      .sp {
+         background-color: v.$Light-yellow;
+      }
+      .sr {
+         background-color: v.$Light-gray;
+      }
+     }
+   }
+}

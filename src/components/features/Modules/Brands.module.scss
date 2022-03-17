@@ -1,0 +1,23 @@
+@use "../../../stylesheets/shared/variables" as v;
+@use "../../../stylesheets/shared/mixins" as m;
+
+.brands__container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: auto;
+  padding: 2rem 0;
+  @include m.desktop {
+     margin: 6rem 0;
+     grid-template-columns: repeat(6, 1fr)
+  }
+  > div {
+     @include m.flex_column;
+     @include m.flex_center;
+     > img {
+        width: 50%;
+        @include m.desktop {
+           width: 50%;
+        }
+     }
+  }
+}

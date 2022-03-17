@@ -1,6 +1,6 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
-import { HashRouter as Router } from "react-router-dom"
+import { BrowserRouter as Router } from "react-router-dom"
 import Brand from "./components/Pages/Brand";
 import Home from "./components/Pages/Home";
 import Layout from "./components/Pages/Layout";
