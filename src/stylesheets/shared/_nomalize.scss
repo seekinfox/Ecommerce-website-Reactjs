@@ -10,11 +10,26 @@
  */
  * {
    box-sizing: border-box;
+   scrollbar-color: transparent transparent;
+  scrollbar-width: thin;
+  *::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+  }
+  *::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  *::-webkit-scrollbar-thumb {
+    background-color: transparent;
+    border-radius: 0px;
+    border: none;
+  }
  }
  
   html {
     line-height: 1.15; /* 1 */
     -webkit-text-size-adjust: 100%; /* 2 */
+  
   }
   
   /* Sections
