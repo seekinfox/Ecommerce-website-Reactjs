@@ -1,0 +1,9 @@
+@use "../../../stylesheets/shared/mixins" as m ;
+@use "../../../stylesheets/shared/variables" as v;
+.mens__store_container {
+   @include m.desktop {
+      padding: 0 5rem;
+      @include m.flex_row;
+   }
+}
+

@@ -1,0 +1,219 @@
+@use "../../../stylesheets/shared/mixins" as m ;
+@use "../../../stylesheets/shared/variables" as v;
+.itemDetails___container {
+   padding: 1rem;
+   @include m.desktop {
+      padding: 1rem 8rem;
+   }
+   button {
+      padding: 0;
+      margin: 0;
+   }
+}
+
+.id__links_address {
+   > span {
+      @include m.desktop {
+         font-size: 1.3rem;
+      }
+      opacity: .7;
+      letter-spacing: .1rem;
+      text-transform: capitalize;
+      > a {
+         text-decoration:underline;
+         &:last-of-type {
+            font-weight: bold;
+         }
+      }
+   }
+}
+
+//item container 
+
+.id__item_container {
+   padding-top: 1rem;
+   @include m.desktop {
+      @include m.flex_row;
+   }
+}
+.id__images_container {
+   @include m.desktop {
+      flex-basis: 60%;
+   }
+
+   .id__big_image {
+      > img {
+         width: 100%;
+         @include m.desktop {
+            width: 70%;
+         }
+      }
+
+   }
+   
+   // mobile buttons 
+   .id__buttons_container {
+      margin-top: 1rem;
+      @include m.flex_row;
+      @include m.flex_center;
+
+      > button {
+         cursor: pointer;
+         color: v.$Light-gray;
+         font-size: 1.3rem;
+         background-color: transparent;
+         margin: 0 .4rem;
+      }
+      
+   }
+   //dekstop buttons 
+   .id__small_images_container {
+      margin-top: 2rem;
+      @include m.flex_row;
+      justify-content: flex-start;
+      
+      .id__small_image {
+         cursor: pointer;
+         border: 1px solid v.$Light-gray;
+         margin-right: 2rem;
+         width: 5rem;
+         height: 5rem;
+         overflow: hidden;
+         > img {
+            width: 100%;
+         }
+      }
+   }
+
+}
+
+//details container
+
+.id__item__details_container {
+   width: 100%;
+   @include m.flex_column;
+   @include m.desktop {
+      width: 50%;
+   }
+   > * {
+      margin: 0;
+   }
+   > h1 {
+      text-transform: uppercase;
+      line-height: 2;     
+      letter-spacing: .2rem;
+   }
+   > h2 {
+      font-weight: lighter;
+      margin-bottom: 1rem;
+      text-transform: capitalize;
+   }
+   > h3 {
+      line-height: 2;
+      margin-top: 1rem;
+      text-transform: capitalize;
+   }
+   > span {
+      margin-bottom: 1rem;
+      &:first-of-type {
+         font-weight: bold;
+         letter-spacing: .1rem;
+      }
+      &:last-of-type {
+         opacity: .7;
+         @include m.flex_row;
+         > svg {
+            margin-left: .5rem;
+            font-size: 1.5rem;
+         }
+         > span {
+            margin: 0 .3rem;
+            font-weight: bold
+         }
+      }
+   }
+   .item__info_stars {
+      @include m.flex_row;
+      align-items: center;
+      > svg {
+         margin-right: .15rem;
+      }
+      > span {
+         font-size: .9rem;
+         margin-left: .5rem;
+         opacity: .6;
+      }
+   }
+   .id__sizes {
+      margin-top: 1rem;
+      display: grid;
+      grid-template-columns: repeat(6, 3rem);
+      gap: 1rem;
+      grid-auto-rows: 3rem;
+      > div {
+         cursor: pointer;
+         background-color: rgba(0,0,0,.1);
+         @include m.flex_column;
+         @include m.flex_center;
+      }
+   }
+   .id__delivery {
+      @include m.flex_column;
+      align-items: flex-start;
+      justify-content: center;
+      padding: 1rem 0   ;
+      > label {
+         @include m.flex_row;
+         justify-content: center;
+         align-items: center;
+         >input[type="radio"]{
+            width: 1.3rem;
+            height: 1rem;
+            filter: grayscale(100%)opacity(80%);
+            @include m.flex_column;
+            @include m.flex_center;
+         }
+         > p {
+            text-transform: capitalize;
+            opacity: .7;
+            line-height: 1.5;
+            font-size: .9rem;
+            margin-left: 1rem;
+            @include m.flex_column;
+            font-weight: bold;
+            > span {
+               font-weight: lighter;
+            }
+         }
+      }
+   }
+   > button {
+      cursor: pointer;
+      @include m.flex_row;
+      @include m.flex_center;
+      background-color: v.$Black-main-text;
+      letter-spacing: .2rem;
+      padding: 1rem;
+      width: 18rem;
+      align-self: flex-start;
+      > svg {
+         margin-left: .5rem;
+      }
+   }
+}
+.id__item_features {
+   margin-top: 3rem;
+   > h3 {
+      margin: 0;
+      line-height: 2;
+      text-transform: capitalize;
+   }
+   > h4 {
+      font-weight: lighter;
+      text-transform: capitalize;
+      margin: 0;
+   }
+   li {
+      line-height: 2;
+   }
+}

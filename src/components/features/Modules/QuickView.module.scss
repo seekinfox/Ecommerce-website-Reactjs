@@ -1,0 +1,33 @@
+@use '../../../stylesheets/shared/variables' as v;
+@use '../../../stylesheets/shared/mixins' as m;
+
+
+.qv__popup_container {
+   position: fixed;
+   width: 100%;
+   height: 100%;
+   overflow: hidden;
+   top: 0;
+   left: 0;
+   z-index: 2;
+   background-color: rgba(0,0,0,.6);
+   @include m.flex_column;
+   @include m.flex_center;
+}
+.qv__image_container {
+   width: 80%;
+   @include m.desktop {
+      width: 33%;
+   }
+   > img {
+      width: 100%;
+   }
+}
+.qv__arrows {
+   > button {
+      @include m.desktop {
+         font-size: 1.5rem;
+      }
+      background-color: v.$Black-main-text;
+   }
+}

@@ -1,0 +1,25 @@
+@use "../../../stylesheets/shared/variables" as v;
+@use "../../../stylesheets/shared/mixins" as m;
+
+.loading__container {
+   width: 100%;
+   height: 100%;
+   position: fixed;
+   top:0;
+   left: 0;
+   z-index: 2;
+   background-color: v.$Black-main-text;
+   @include m.flex_row;
+   @include m.flex_center;
+
+   .loading__image_container {
+      width: 13rem;
+      height: 13rem;
+      border-radius: 50%;
+      overflow: hidden;
+      > img {
+         width: 100%;
+         height: 100%;
+      }
+   }
+}
