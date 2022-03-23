@@ -1,0 +1,103 @@
+@use "../../../stylesheets/shared/mixins" as m;
+@use "../../../stylesheets/shared/variables" as v;
+.sp__filter_desktop {
+   
+   h3 {
+      text-transform: capitalize;
+      letter-spacing: .1rem;
+   }
+   .sp__category {
+      margin-top: 1rem;
+      text-transform: capitalize;
+      border-top: 1px  solid v.$Light-gray;
+   }
+   .sp__brand {
+      border-top: 1px solid v.$Light-gray;
+      > label {
+         position: relative;
+         width: 100%;
+         @include m.flex_column;
+         justify-content: center;
+         > input {
+            padding-left: 1rem;
+            height: 2.5rem;
+            width: 100%;
+         }
+         > svg {
+            position: absolute;
+            right: .5rem;
+            font-size: 1.4rem;
+         }
+      }
+   }
+}
+.sp__brand_list {
+   @include m.flex_column;
+   margin-top: .5rem;
+   height: 20rem; 
+   overflow-x: hidden;
+   overflow-y: scroll;
+
+   > label {
+      padding: .5rem 0;
+      text-transform: capitalize;
+
+      > input[type="checkbox"] {
+         margin-right: .5rem;
+      }
+   }
+}
+.sp__color {
+   @include m.flex_column;
+   margin-top: .5rem;
+   
+   border-top: 1px solid v.$Light-gray;
+
+   .sp__color_list {
+      height: 10rem; 
+      overflow-x: hidden;
+      overflow-y: scroll;
+
+      > label {
+         padding: .5rem 0;
+         text-transform: capitalize;
+         @include m.flex_row;
+         align-items: center;
+   
+         > span {
+            margin-right: .5rem;
+            width: 1rem;
+            height: 1rem;
+         }
+         > input {
+            display: none;
+         }
+      }
+   }
+   
+}
+
+.sp__size {
+   @include m.flex_column;
+   margin-top: .5rem;
+   
+   border-top: 1px solid v.$Light-gray;
+
+   .sp__size_list {
+      height: 15rem; 
+      overflow-x: hidden;
+      overflow-y: scroll;
+      display: grid;
+      grid-template-columns: repeat(3, 3rem);
+      grid-auto-rows: 3rem;
+      justify-content: start;
+      gap: .5rem;
+      .sp__size_item {
+         cursor: pointer;
+         @include m.flex_column;
+         @include m.flex_center;
+         border: 1px solid v.$Light-gray;
+      }
+   }
+   
+}

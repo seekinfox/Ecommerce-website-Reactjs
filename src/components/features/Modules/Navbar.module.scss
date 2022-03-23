@@ -10,7 +10,15 @@
 .navbarSection {
    padding: 1rem 2rem;
    background-color: v.$White;
-   position: relative;
+   position: fixed;
+   top:0;
+   left: 0;
+   width: 100%;
+   z-index: 2;
+   background-color: v.$Black-main-text;
+   * {
+      color: v.$White;
+   }
    
    @include m.desktop {
       @include m.flex-row;
@@ -88,7 +96,7 @@
       box-shadow: 10px 0px 10px v.$Black-Opacity;
       height: 100%;  
       width: 70%;
-      background-color: v.$White;
+      background-color: v.$Black-main-text;
       @include m.flex-column;
       padding: 5rem 2rem;
       transition: .3s ease;

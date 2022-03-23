@@ -1,0 +1,20 @@
+@use "../../../stylesheets/shared/mixins" as m;
+@use "../../../stylesheets/shared/variables" as v;
+.sp__sort {
+   position: relative;
+   .sp__sort_list {
+      width: 100%;
+      position: absolute;
+      top: 0;
+      background-color: v.$White;
+      box-shadow: 0px 5px 10px rgba(0,0,0,0.2);
+      > p {
+         cursor: pointer;
+         padding:.5rem;
+         font-size: .9rem;
+         @include m.desktop {
+            font-size: 1rem;
+         }
+      }
+   }
+}

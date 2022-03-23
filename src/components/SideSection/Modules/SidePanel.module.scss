@@ -1,0 +1,53 @@
+@use "../../../stylesheets/shared/mixins" as m;
+@use "../../../stylesheets/shared/variables" as v;
+
+.sp__container {
+   padding: 0 clamp(3rem, 3vw, 5rem);
+   margin-bottom: 2rem;
+   @include m.desktop {
+      max-width: 20vw;
+      margin: 0;
+      flex-grow: 0;
+   }
+   button {
+      cursor: pointer;
+      border: 1px solid v.$Black-main-text;
+      font-size: .9rem;
+      background-color: v.$White;
+      color: v.$Black-main-text;
+      opacity: .8;
+      @include m.flex_row;
+      @include m.flex_center;
+      > svg {
+         margin-left:.5rem;
+      }
+   }
+   > nav {
+      line-height: 2;
+      padding-bottom: 1rem;
+      border-bottom: 1px solid v.$Light-gray;
+      > h2 {
+         margin: 0;
+         text-transform: capitalize;
+         font-size:1.5rem ;
+      }
+      > span {
+         font-weight: bold;
+         letter-spacing: .1rem;
+         > a {
+            text-transform: capitalize;
+            text-decoration: none;
+            color: black;
+         }
+      }
+   }
+}
+.sp__section2 {
+   padding: 1rem 0;
+   border-bottom: 1px solid v.$Black-Opacity;
+   @include m.flex_row;
+   justify-content: space-around;
+   @include m.desktop {
+      @include m.flex_column;
+   }
+}
