@@ -20,14 +20,7 @@ export default function ItemContainer({type}) {
       <Item type={type} data={ShoesDataMen} /> :
 
       // passing men shoe data for testing 
-      
-      type === 'women' ?
-      <Item type={type} data={ShoesDataWomen}/>
-      :
-      null
-    } 
-      
-      
+      <Item type={type} data={ShoesDataWomen}/>}
       
     </motion.div>
 
