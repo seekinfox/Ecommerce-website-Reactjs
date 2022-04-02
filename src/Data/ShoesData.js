@@ -6,6 +6,12 @@ import { shoeb1, shoeb2, shoeb3, shoeb4 } from "./ImagesImport"
 import { shoec1, shoec2, shoec3, shoec4 } from "./ImagesImport"
 import {shoed1, shoed2, shoed3, shoed4} from "./ImagesImport"
 
+import {wshoea1,wshoea2,wshoea3,wshoea4,wshoea5,wshoea6} from "./ImagesImport"
+import {wshoeb1,wshoeb2,wshoeb3,wshoeb4} from "./ImagesImport"
+import {wshoec1,wshoec2,wshoec3,wshoec4} from "./ImagesImport"
+import {wshoed1,wshoed2,wshoed3,wshoed4} from "./ImagesImport"
+import {wshoef1,wshoef2,wshoef3,wshoef4} from "./ImagesImport"
+
 export const ShoesDataMen = [
    {
       id: '9c000000-a9d5-11ec-b42f-1f5ea23ecaf9',
@@ -77,10 +83,12 @@ export const ShoesDataMen = [
 export const ShoesDataWomen = [
    {
       id: '9c000000-a9d5-11ec-b42f-1f5ea23ecaf9',
-      img1: shoea1, 
-      img2:shoea2, 
-      img3: shoea3,
-      img4: shoea4,
+      img1: wshoea1, 
+      img2: wshoea2, 
+      img3: wshoea3,
+      img4: wshoea4,
+      img5: wshoea5,
+      img6: wshoea6,
       brand: "nike",
       subtitle: "Men's Court Vision Mid Sneaker", 
       price: "61,322.85", 
@@ -93,10 +101,10 @@ export const ShoesDataWomen = [
    },
    {
       id: '9c100000-a9d5-11ec-b42f-1f5ea23ecaf9',
-      img1: shoeb1, 
-      img2:shoeb2, 
-      img3: shoeb3,
-      img4: shoeb4,
+      img1: wshoeb1, 
+      img2: wshoeb2, 
+      img3: wshoeb3,
+      img4: wshoeb4,
       brand: "zegna",
       subtitle: "Triple Stitch Suede Slip-On Sneaker", 
       price: "61,322.85", 
@@ -109,10 +117,10 @@ export const ShoesDataWomen = [
    },
    {
       id: '9c100001-a9d5-11ec-b42f-1f5ea23ecaf9',
-      img1: shoec1, 
-      img2:shoec2, 
-      img3: shoec3,
-      img4: shoec4,
+      img1: wshoec1, 
+      img2: wshoec2, 
+      img3: wshoec3,
+      img4: wshoec4,
       brand: "ON",
       subtitle: "Cloud X Training Shoe", 
       price: "11,446.11", 
@@ -125,11 +133,11 @@ export const ShoesDataWomen = [
    },
    {
       id: '9c100002-a9d5-11ec-b42f-1f5ea23ecaf9',
-      img1: shoed1, 
-      img2:shoed2, 
-      img3: shoed3,
-      img4: shoed4,
-      brand: "nike",
+      img1: wshoed1, 
+      img2: wshoed2, 
+      img3: wshoed3,
+      img4: wshoed4,
+      brand: "puma",
       subtitle: "Blazer Low '77 Sneaker", 
       price: "5,21244", 
       stars: 5,
@@ -139,4 +147,21 @@ export const ShoesDataWomen = [
       filterType: "casual",
       season: "", 
    },   
+   {
+      id: '9c100003-a9d5-11ec-b42f-1f5ea23ecaf9',
+      img1: wshoef1, 
+      img2: wshoef2, 
+      img3: wshoef3,
+      img4: wshoef4,
+      brand: "puma",
+      subtitle: "Blazer Low '77 Sneaker", 
+      price: "5,21244", 
+      stars: 5,
+      totalRatingCount: 1200,
+      detailsTitle: "Old-school b-ball is alive and scoring in a '70s-reissue low-top sporting a streamlined profile and sleek autoclaved sole that keep the vintage vibes hustling. Pops of hairy suede and a raw-edged foam tongue add standout details that honor the shoe's vintage roots.",     
+      details: ["Lace-up style", "Autoclave construction fuses the layers for a streamlined look", "Leather upper/textile and leather lining/rubber sole", "Imported", "Item #6133999"],
+      filterType: "casual",
+      season: "", 
+   },  
+   
 ]
