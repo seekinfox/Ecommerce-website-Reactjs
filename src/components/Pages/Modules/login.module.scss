@@ -1,0 +1,265 @@
+*{
+    margin: 0;
+}
+
+.body img{
+    width: 100vw;
+    height: 200vh;
+    overflow: visible;
+    margin-left: 1rem;
+    
+}
+
+.bg_shoe img{
+    position: absolute;
+    margin-top: -85vh;
+    margin-left: 29vw;
+    height: 39vh;
+    width: 43vw;
+    opacity: 0.9;
+    border-radius: 2rem;
+}
+
+.container{
+    background: rgb(234, 244, 238);
+    width: 77vw;
+    height: 75vh;
+    border-radius: 1.6rem;
+    margin-left: 14.3vw;
+    margin-top: -175vh;
+    position: relative;
+    padding-left: 6.5vw;
+    padding-top: 1.3rem;
+    
+}
+
+.welcome{
+    margin-top:2vh;
+    margin-left: 10.5vw;
+    font-size: 5.6vw;
+    color: green;
+    margin-bottom: 3.5vh;
+}
+
+
+
+
+
+.username {
+    font-size: 6vw;
+    color: rgb(65, 141, 116);  
+    
+}
+.username input{
+    width: 60vw;
+    box-shadow: none;
+    border: 0;
+    font-size: 1.2em;
+    border: none;
+    background: transparent;
+    border-bottom: .2rem solid #6cb472;
+}
+
+.password{
+    margin-top: 3.8vh;
+    font-size: 6vw;
+    color: rgb(65, 141, 116);
+}
+
+.password input{
+    width: 61.2vw;
+    border: none;
+    background: transparent;
+    border-bottom: .2rem solid #6cb472;
+    font-size: 1.2em;
+}
+
+
+.remember_forget{
+    margin-top: 3.5vh;
+    font-size: 4.2vw;
+    display: inline-flex;
+}
+
+.remember input{
+   
+    width: 3.8vw;
+    height: 3vw;
+    cursor: pointer;
+    margin-top: -0.4vw;
+}
+
+.forget{
+        margin-left: 5vw;
+        
+    
+}
+
+
+.submit button{
+    margin-top: 3.6vh;
+    width: 61.3vw;
+    height: 8vh;
+    border-radius: .2rem;
+    background-color: rgb(240, 195, 48);
+    border: none;
+    color: white;
+    font-size: 10vw;
+}
+
+.submit button :hover{
+    cursor: pointer;
+}
+
+.alter{
+    margin-top: 2.9vh;
+    margin-left: 13.5vw;
+    font-size: 3.4vw;
+}
+.alter button{
+    margin-top: 2.4vh;
+    width: 34vw;
+    height: 7vh;
+    font-size: 2.1em;
+    background-color: rgb(153, 130, 238);
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+.alter button:hover{
+    background-color: rgb(47, 25, 124);
+
+}
+
+
+
+
+@media (min-width:1030px){
+
+    .body img{
+        width: 100vw;
+        height: 120vh;
+        overflow: visible;
+        margin-left: 1rem;
+        
+    }
+    
+    .container{
+        max-width: 500px;
+        width: 60vw;
+        height: 85vh;
+        background: rgb(234, 244, 238);
+    
+        border-radius: 1.6rem;
+        margin-left: 13.3vw;
+        margin-top: -100vh;
+        position: relative;
+        padding-left: 3.5vw;
+        padding-top: 1.3rem;
+    }
+
+    .bg_shoe img{
+        position: absolute;
+        margin-top: -78vh;
+        margin-left: 52rem;
+        height: 39vh;
+        width: 33vw;
+        opacity: 0.9;
+        border-radius: 2rem;
+    }
+
+    .welcome{
+        margin-left: 6.5vw;
+        font-size: 2vw;
+        color: green;
+        margin-bottom: 1vh;
+    }
+    
+    
+    .username{
+        font-size: 1.8vw;
+        color: rgb(65, 141, 116);     
+    }
+    
+    
+    .username input{
+        height: 8vh;
+        width: 25vw;
+        box-shadow: none;
+        border: 0;
+        font-size: 1.2em;
+        border: none;
+        background: transparent;
+        border-bottom: .2rem solid #6cb472;
+    }
+    
+    .password{
+        margin-top: 1.6vw;
+        font-size: 1.8vw;
+        color: rgb(65, 141, 116);
+    }
+    
+    .password input{
+        width: 25vw;
+        height: 3rem;
+        border: none;
+        background: transparent;
+        border-bottom: .2rem solid #6cb472;
+        font-size: 2.3rem;
+    }
+    
+    .remember{
+        margin-right: 1vw;
+        
+    }
+    .remember input{
+        width: 1.6rem;
+        height: 1.2rem;
+        cursor: pointer;
+    }
+    .remember_forget{
+        margin-top: 1.3rem;
+        font-size: 1.3em;
+        display: inline-flex;
+    }
+    .forget{
+        margin-left: 5.6vh;
+    }
+    
+    .submit button{
+        margin-top: 2rem;
+        width: 25vw;
+        height: 4.2rem;
+        border-radius: .2rem;
+        background-color: rgb(240, 195, 48);
+        border: none;
+        color: white;
+        font-size: 2.3rem;
+    }
+    
+    .submit button :hover{
+        cursor: pointer;
+    }
+    
+    .alter{
+        margin-top: 2rem;
+        margin-left: 5vw;
+        font-size: 1.4rem;
+    }
+    .alter button{
+        margin-top: 1.2rem;
+        width: 14rem;
+        height: 3.2rem;
+        font-size: 1.4vw;
+        background-color: rgb(153, 130, 238);
+        border: none;
+        color: white;
+        cursor: pointer;
+    }
+    
+    .alter button:hover{
+        background-color: rgb(47, 25, 124);
+    
+    }
+}
